@@ -29,7 +29,7 @@ header {
 }
 
 .project-container a {
-    color: #4b8bf5; /* Light blue color for links */
+    color: #62b1f7; /* Light blue color for links */
     text-decoration: none;
 }
 
@@ -37,7 +37,23 @@ header {
     text-decoration: underline;
 }
 
-img {
-    margin-top: 10px;
-    border-radius: 5px; /* Optional: adds rounded corners to your images */
+.project-screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust '100px' based on your preference for minimum width */
+    gap: 10px; /* Space between screenshots */
+    justify-content: center; /* Center the grid items if they don't fill the full width */
+    padding: 20px 0; /* Optional: adds padding above and below the screenshot grid */
+}
+
+.project-screenshots img {
+    width: 100%; /* Make images responsive within their grid item */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) { /* Adjust this breakpoint as needed */
+    .project-screenshots {
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+        grid-auto-rows: auto; /* Adjust row height automatically */
+    }
 }

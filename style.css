@@ -37,12 +37,12 @@ header {
     text-decoration: underline;
 }
 
+/* Default layout for smaller screens */
 .project-screenshots {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust '100px' based on your preference for minimum width */
-    gap: 10px; /* Space between screenshots */
-    justify-content: center; /* Center the grid items if they don't fill the full width */
-    padding: 20px 0; /* Optional: adds padding above and below the screenshot grid */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    gap: 10px;
+    justify-content: center;
 }
 
 .project-screenshots img {

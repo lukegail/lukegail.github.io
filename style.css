@@ -36,6 +36,10 @@ header {
     text-decoration: underline;
 }
 
+.project-container ul li {
+    margin-bottom: 5px; /* Adjust this value as needed */
+}
+
 /* Default layout for smaller screens */
 .project-screenshots {
     display: grid;

@@ -14,12 +14,11 @@ header {
 .project {
     display: flex;
     justify-content: center;
-    padding: 20px;
 }
 
 .project-container {
     background-color: #333;
-    padding: 20px;
+    padding: 0 20px 20px; /* top, right and left, bottom */
     width: 80%; /* Adjust based on preference */
     border-radius: 10px;
 }
